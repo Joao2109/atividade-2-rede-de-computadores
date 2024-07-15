@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        main {
+            width: min(210mm, 100%);
+            margin: 0 auto;
+            padding: 1mm;
+        }
+
+        ul {
+            padding-left: 5mm;
+            list-style: initial;
+        }
+
+        li {
+            margin: 3mm 0;
+        }
+    </style>
+    <main>
+        <ul style="list-style: decimal;">
+            <li>
+                <p>
+                    Topologia de rede é um termo utilizado para definir a forma de estruturação de uma rede de
+                    computadores. Ela é necessária quando há uma rede de computadores conectados em uma mesma rede.
+                    <br />
+                    Ela também determina a forma como as máquinas vão se conectar entre si, considerando os hubs e
+                    switches. Muitas vezes, o conceito não é levado em consideração, o que traz uma série de problemas
+                    de sincronização de dados e erros na comunicação.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A topologia de redes é dividida em sete tipos:
+                </p>
+                <ul>
+                    <li>
+                        <h4>Barramento</h4>
+                        <p>
+                            Neste tipo, todos os dados circulam por um único cabo. A principal vantagem é que é uma
+                            estratégia econômica e versátil, com manutenção simplificada. Porém é muito difícil de
+                            escalar, já que muitos dispositivos conectados podem congestionar a rede.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Anel</h4>
+                        <p>
+                            A topologia anel é realizada de forma circular. Isso significa que cada uma das máquinas
+                            possui duas máquinas vizinhas, pelas quais é realizada a transmissão de dados. Ou seja, é um
+                            círculo de dispositivos conectados, com fluxo de dados unidirecional e repasse por cada nó
+                            até chegar ao seu destino.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Árvores</h4>
+                        <p>
+                            Esse tipo de topologia recebe esse nome pois a sua disposição lembra os galhos de uma
+                            árvore. Essa topologia de rede é feita a partir de um nó central, que distribuirá entre os
+                            demais dispositivos. Sua principal vantagem é minimizar a vulnerabilidade em comparação com
+                            a topologia em anel, além de facilitar a detecção de erros.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Estrela</h4>
+                        <p>
+                            Na topologia estrela, um dispositivo central se conecta aos outros dispositivos da rede. A
+                            vantagem é que a falha isolada não compromete o fluxo, visto que ele parte do nó central em
+                            direção aos demais dispositivos. Mas, assim como o tipo árvore, em falhas no nó central,
+                            haverá prejuízo em todo o fluxo de dados.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Ponto a ponto</h4>
+                        <p>
+                            O tipo ponto a ponto é o que garante a maior simplicidade. Os nós todos se conectam entre
+                            si. Por conta dessa característica, é o tipo mais comum em instalações residenciais. É ideal
+                            para estabelecer a comunicação rápida entre dois dispositivos. Sua desvantagem é que não
+                            supre as necessidades de instalações grandiosas.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Malha</h4>
+                        <p>
+                            A topologia malha é bastante conhecida pela sua estabilidade. É feita pela conexão de todos
+                            os dispositivos entre si, uma excelente solução para operações robustas. A maior vantagem
+                            deste tipo é que a falha individual ou mesmo de algumas unidades de dispositivos não é capaz
+                            de derrubar a rede, contudo, quanto maior a quantidade de dispositivos, maiores os custos e
+                            a complexidade de instalação.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Híbrida</h4>
+                        <p>
+                            Assim como o nome já sugere, é um tipo que mescla diferentes tipos de topologia de rede.
+                            Pode incluir dois ou mais tipos de padrões e é amplamente utilizado, justamente por fornecer
+                            uma solução flexível e personalizável. Sua maior vantagem é a adaptabilidade, de acordo com
+                            a quantidade de dispositivos e orçamento disponível, já a sua maior desvantagem é a
+                            complexidade e assim como o tipo malha, exige um maior planejamento.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+                    A topologia em estrela é caracterizada por um elemento central (um hub ou switch, por exemplo) que
+                    gerencia o fluxo de dados da rede, estando diretamente conectado (ponto-a-ponto) a cada nó, daí
+                    surgiu a designação "Estrela".
+                    <br />
+                    A topologia em estrela tem vantagens e desvantagens, sendo as mais conhecidas:
+                </p>
+                <ul>
+                    <li>
+                        <h4>Vantagens</h4>
+                        <p>
+                            Devido a sua estrutura centralizada, na topologia em estrela é facil e simples adicionar
+                            novos dispositivos, alterar configurações, já que é necessário apenas configurar o
+                            dispositivo central, e falhas em qualquer ligação não comprometem o resto da rede.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Desvantagens</h4>
+                        <p>
+                            Devido à seu tipo de conexão e sua estrutura centralizada, a topologia em estrela é mais
+                            cara que outras topologias e uma falha no dispositivo central compromete toda a rede.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+                    A topologia de rede em anel consiste em estações conectadas através de um circuito fechado, em
+                    série. O anel não interliga as estações diretamente, mas consiste de uma série de repetidores
+                    ligados por um meio físico, sendo cada estação ligada a estes repetidores.
+                    <br />
+                    Redes em anel são capazes de transmitir e receber dados em configuração unidirecional; o projeto dos
+                    repetidores é mais simples e torna menos sofisticados os protocolos de comunicação que asseguram a
+                    entrega da mensagem corretamente e em seqüência ao destino.
+                    <br />
+                    Em uma rede em anel, cada nó tem sua vez para enviar e receber informações através de um token
+                    (ficha, em inglês). O token, junto com quaisquer informações, é enviado do primeiro para o segundo
+                    nó, que extrai as informações endereçadas a ele e adiciona quaisquer informações que deseja enviar.
+                    Depois, o segundo nó passa o token e as informações para o terceiro nó e assim por diante, até
+                    chegar novamente ao primeiro nó. Somente o nó com o token pode enviar informações. Todos os outros
+                    nós devem esperar o token chegar.
+                    <br />
+                    Nessas redes, a fiação geralmente é realizada com cabos coaxiais e possui conectores BNC em formato
+                    de "T", onde uma das pontas você conecta no computador e a outra levará a informação adiante,
+                    proseguindo para a máquina seguinte.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A topologia de rede em malha é uma das principais arquiteturas de rede em que os dispositivos são
+                    conectados com muitas interconexões redundantes entre nós de rede, como roteadores e switches. Em
+                    uma topologia em malha, se qualquer cabo ou nó falha, existem muitas outras maneiras para dois nós
+                    se comunicarem. Embora a facilidade de solução de problemas e o aumento da confiabilidade sejam
+                    vantagens definitivas, as redes em malha são caras para instalar porque usam muito cabeamento.
+                    Muitas vezes, uma topologia de malha é usada em conjunto com outras topologias (como estrela, anel e
+                    barramento) para formar uma topologia híbrida. A topologia de malha foi introduzida pela primeira
+                    vez há mais de 30 anos para o desenvolvimento de aplicações militares. Mas, hoje em dia, isso tem
+                    sido usado para automação residencial, controle HVAX, edifícios inteligentes e algumas arquiteturas
+                    WAN, como a Internet. Portanto, a Internet permite que os sites se comuniquem mesmo durante uma
+                    guerra.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A topologia em barramento é um tipo de organização física de rede na qual todos os dispositivos são
+                    conectados a um único cabo, chamado de barramento. Neste tipo de configuração, cada dispositivo se
+                    conecta ao barramento através de um conector específico, e a comunicação entre os dispositivos
+                    ocorre enviando sinais elétricos ao longo do cabo compartilhado.
+                    <br />
+                    O cabo que liga um nó até o barramento é chamado de cabo transceptor. A conexão do computador com o
+                    barramento (cabo transceptor) é feita por meio de um transceptor-vampiro. Esse equipamento tem esse
+                    nome porque perfura a blindagem do cabo de backbone para conectar-se com núcleo metálico deste. No
+                    lugar do transceptor-vampiro, alternativamente, esse tipo de rede também pode ser formada por
+                    conectores em T que se ligam diretamente a uma placa de rede.
+                    <br />
+                    A topologia em barramento é de fácil instalação, pois basta que o backbone passe nas proximidades do
+                    nó para ser possível fazer a conexão. Assim, essa topologia usa uma quantidade menor de cabos que as
+                    topologias de malha e anel, por exemplo.
+                    <br />
+                    Essa topologia tem como desvantagem o fato de limitar o tamanho da rede. Uma rede em barra não pode
+                    crescer de forma indefinida. Por que? Porque à medida que o sinal vai se afastando do nó
+                    transmissor, ele vai perdendo potência. Então há uma distância máxima entre dois nós em uma rede em
+                    barramento. Note que, em regra, não há repetidores de sinal em uma rede em barramento. Outras
+                    desvantagens dessa topologia são a dificuldade de reconfiguração da rede, a possibilidade de
+                    congestionamento de tráfego e também o isolamento de falhas.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A topologia de rede tem duas representações distintas, a Física e a Lógica.
+                    <br />
+                    A topologia de rede física diz respeito aos elementos físicos que compõem a conexão de rede. Ou
+                    seja, fala sobre a disposição de cabos e dispositivos conectados.
+                    <br />
+                    Já a representação lógica diz respeito à forma como a rede trabalha. Ou seja, a interface,
+                    softwares, entre outros quesitos.
+                    <br />
+                    Ela possibilita mais segurança, compartilhamento de arquivos com facilidade, além de
+                    agilizar a comunicação.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A organização e a estrutura da sua rede de computadores são fundamentais para garantir a eficiência
+                    das operações e a velocidade das informações.
+                    <br />
+                <ul>
+                    <li>
+                        <h4>Barramento</h4>
+                        <p>
+                            A topologia em barramento é uma das mais confiáveis para sistemas simples, porém é muito
+                            dificil de escalar e sua confiabilidade diminui drásticamente à medida que novos
+                            dispositivos são adicionados à rede.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Estrela</h4>
+                        <p>
+                            A topologia em estrela é a topologia mais utilizada em redes familiares, é facilmente
+                            escalável, necessitando apenas de cabos ou repetidores de sinal para redes wireless, e sua
+                            estrutura centralizada é bastante confiável, já que erros em dispositivos ou conexões
+                            isolados não comprometem o funcionamento da rede, porem, devido à sua estrutura, erros no
+                            dispositivo central comprometem toda a rede.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Anel</h4>
+                        <p>
+                            A topologia em anel é mais resiliente a falhas individuais do que algumas outras topologias,
+                            porque se um dispositivo falha ou o cabo é cortado, o restante da rede ainda pode continuar
+                            a operar. No entanto, se houver múltiplas falhas ao longo do anel, a rede pode ficar parcial
+                            ou totalmente inoperante, porém, devido à sua estrutura, o processo de adicionar ou remover
+                            dispositivos na topologia em anel é bastante complicado.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Malha</h4>
+                        <p>
+                            A topologia em malha é a melhor topologia em termos de confiabilidade e escalabilidade,
+                            devido à sua alta redundancia, erros em qualquer dispositivo ou cabo, não comprometem o
+                            restande da rede,além de ser fácil adicionar novos dispositivos, porém todas essas vantagens
+                            vem a um custo, devido à sua alta redundancia, os custos para criar a rede, ou adicionar
+                            novos dispositivos à ela é alto, e a medida que a rede aumenta, esses custos aumentam
+                            proporcionalmente.
+                        </p>
+                    </li>
+                </ul>
+                <br />
+                Diferentes topologias de rede oferecem diferentes opções de escalabilidade e confiabilidade, cabendo
+                ao usuário determinar qual rede é melhor para sua demanda.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A escolha da topologia de rede pode ter impactos significativos na segurança da rede. Considerações
+                    importantes relacionadas à segurança ao escolher uma topologia de rede são: Visibilidade e controle,
+                    redução de pontos de falha, isolamento de segmentos críticos, monitoramento eficiente, capacidade de
+                    resposta a incidentes, limitação de largura de banda, complexidade e manutenção e considerações
+                    físicas e lógicas.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A topologia de rede desempenha um papel vital no desempenho, segurança e eficiência da sua rede de
+                    computadores. Compreender os diferentes tipos de topologias e suas vantagens e desvantagens
+                    permitirá que você escolha a topologia mais adequada para as suas necessidades. Ao otimizar sua
+                    topologia de rede, você poderá melhorar a velocidade, a segurança e a confiabilidade da sua rede.
+                </p>
+            </li>
+        </ul>
+    </main>
+    <script>
+
+    </script>
+</body>
+
+</html>
